@@ -45,21 +45,7 @@ Class StateDisplayHighScores():
 This will allow me to display my ability to implement a DB within an existing program. 
 ```
 
-<video width="320" height="240" controls>
-  <source type="video/mp4" src="https://robocop79.github.io/Websiteland//Twitter/FLT.mp4">
-</video>
-
-<div class="embed-container">
-  <iframe
-      src="https://www.youtube.com/embed/kzVzDIh2_mU"
-      width="700"
-      height="480"
-      frameborder="0"
-      allowfullscreen="">
-  </iframe>
-</div>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kzVzDIh2_mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Welcome to GitHub Pages
