@@ -48,54 +48,21 @@ This will allow me to display my ability to implement a DB within an existing pr
 <iframe width="560" height="315" src="https://www.youtube.com/embed/kzVzDIh2_mU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 # Software Engineering
-	I was able to meet the program enhancements listed in Module One. This would be that we were changing the man game loop over to a state machine to handle processing and logic. The process of enhancing this was very difficult. Due to the nature of the changes I was making, many lines of code were written without compiling. This left lots of little errors littered about by the time I was able to first compile. Mostly this was how I was accessing object properties through the use of pointers. 
-	This biggest challenge I faced though was a circular dependency between header files. This was between the Player Turn state and the Print Score state, as we switch back and forth between these states at some point. It took me a long time to uncover this issue, due to the ambiguous nature of the error received (some kind of type not defined error). Ultimately, I ended up resolving it by adding a property to the state machine that allowed me to store a reference to a single circular state to prevent errors from occurring. 
+I was able to meet the program enhancements listed in Module One. This would be that we were changing the man game loop over to a state machine to handle processing and logic. The process of enhancing this was very difficult. Due to the nature of the changes I was making, many lines of code were written without compiling. This left lots of little errors littered about by the time I was able to first compile. Mostly this was how I was accessing object properties through the use of pointers. 
+
+This biggest challenge I faced though was a circular dependency between header files. This was between the Player Turn state and the Print Score state, as we switch back and forth between these states at some point. It took me a long time to uncover this issue, due to the ambiguous nature of the error received (some kind of type not defined error). Ultimately, I ended up resolving it by adding a property to the state machine that allowed me to store a reference to a single circular state to prevent errors from occurring. 
 
 # Data Structures & Algorithms
-	I was able to meet the program enhancements listed in Module One. This would be that we converted the Players array over to a linked list of players. This process touched many different files, seeing as any place a player was referenced/accessed needed to be updated. The logic flow for determining how we rounded from the last player back to the first player needed adjustment as well. 
-	We did this by having the Game Manager hold references to the first player, last player, and current player. While we could have skipped holding the reference to the last player and just traversed our linked list until the last player, doing so would have increased computational cost. Each player, except for the first and last, held references to both the player before and after them. 
-	The challenges I faced while working on this largely pertained to working with pointers, empty pointers, and semantic errors. While working with pointers, sometimes it is hard to understand why we only receive errors on only Player 3. A simple semantic error can prevent you from traversing the list and initializing properly.  
+I was able to meet the program enhancements listed in Module One. This would be that we converted the Players array over to a linked list of players. This process touched many different files, seeing as any place a player was referenced/accessed needed to be updated. The logic flow for determining how we rounded from the last player back to the first player needed adjustment as well. 
+
+We did this by having the Game Manager hold references to the first player, last player, and current player. While we could have skipped holding the reference to the last player and just traversed our linked list until the last player, doing so would have increased computational cost. Each player, except for the first and last, held references to both the player before and after them. 
+
+The challenges I faced while working on this largely pertained to working with pointers, empty pointers, and semantic errors. While working with pointers, sometimes it is hard to understand why we only receive errors on only Player 3. A simple semantic error can prevent you from traversing the list and initializing properly.  
 
 # Database
-	I was unable to fully meet the program enhancements listed in Module One. This would be that we implemented a full database connection to track players and their high scores. While investigating the implementation of a database in C++, I became worried about portability and the scale of my design. Instead, I transitioned to a flat file (.csv) and just performed simple read/write operations on that table.
-	This enhancement allowed me to uncover the flaws I made in my design. Having worked in more expressive languages, I made assumptions as to the scope of work. However, I was able to increase my adherence to the single responsibility paradigm and did provide a minimum viable product that meet the use case of providing a way to track high scores. 
-	The challenges I faced while working on this largely pertained to where within the flow of logic this piece belonged. While originally, I had planned to make a new state to track high scores, I had found the Game Over state to be rather empty and a fitting place to develop. I also had to make minor improvements to the main menu code to provide a cleaner implementation of the new menu item.  
+I was unable to fully meet the program enhancements listed in Module One. This would be that we implemented a full database connection to track players and their high scores. While investigating the implementation of a database in C++, I became worried about portability and the scale of my design. Instead, I transitioned to a flat file (.csv) and just performed simple read/write operations on that table.
 
+This enhancement allowed me to uncover the flaws I made in my design. Having worked in more expressive languages, I made assumptions as to the scope of work. However, I was able to increase my adherence to the single responsibility paradigm and did provide a minimum viable product that meet the use case of providing a way to track high scores. 
 
-## Welcome to GitHub Pages
+The challenges I faced while working on this largely pertained to where within the flow of logic this piece belonged. While originally, I had planned to make a new state to track high scores, I had found the Game Over state to be rather empty and a fitting place to develop. I also had to make minor improvements to the main menu code to provide a cleaner implementation of the new menu item.  
 
-You can use the [editor on GitHub](https://github.com/ChristopherCooke/ChristopherCooke.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/ChristopherCooke/ChristopherCooke.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
