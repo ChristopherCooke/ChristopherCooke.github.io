@@ -1,9 +1,11 @@
 # Introduction: LCR
 The artifact we are working on for the ePortfolio is the dice game application, Left-Center-Right, developed in IT-312 last semester here at SNHU. This artifact was developed independently at my own choice in one of my final programming courses. I chose this item because I saw all the room for improvement while developing it and everything is still fresh in my mind. 
+
 ## Self-Assessment
 Throughout my Computer Science Capstone class, I had worked to improve a previous final project from another class. In doing so, I have displayed my ability to not only improve the design of an application, but to increase the complexity while communicating with stakeholders. Though some hurdles were encountered, I was able to meet all the requirements set forth by myself and approved by my instructor. I can increase modularity while producing clean and efficient code.  
 
 The following artifacts all work together to improve the application. Our main loop has been simplified through the use of a state machine. Our player management has removed the need for the game manager to know about every player, utilizing a linked list of players to dynamically participate in the game. Lastly, the ability to save high scores allows the game to feel more complete. The great thing about all these changes is how minimal the impact was on the user experience. The game was able to maintain its exact same flow, while improving the maintainability of the project.
+
 # Artifacts
 ## Software Engineering / Design
 My selected artifact to display my software engineering skills will be the dice game, Left Center Right, developed in IT-312 here at SNHU. 
@@ -21,6 +23,7 @@ Abstract Class State
 		Implement logic unique to each state here
 ```
 This will allow me to display my ability to design a new feature for an existing product and the ability to implement an advanced game feature.
+
 ## Algorithms and Data Structures
 My selected artifact to display my Algorithm and Data Structure skills will be the dice game, Left Center Right, developed in IT-312 here at SNHU.
 My enhancement plan is to change how we move between players to resolve their turns. Currently, we iterate over a defined player count. However, I would like it more if the player objects were contained within a linked list. This would allow us to just keep repeating the same game state as long as another player exists, without knowing how many players there are. Multiple items will likely need to be adjusted for this, such as displaying score between rounds. 
@@ -30,6 +33,7 @@ Class Player:
 	Hold pointer reference to next player object or null
 ```
 This will allow me to display my ability to implement more complex data structures.
+
 ## Databases
 My selected artifact to display my database skills will be the dice game, Left Center Right, developed in IT-312 here at SNHU.
 My enhancement plan is to add a database to track players and their high scores. This is intended to build on top of the new state machine addition.
@@ -49,8 +53,10 @@ Class StateDisplayHighScores():
 
 This will allow me to display my ability to implement a DB within an existing program. 
 ```
+
 # Initial Code Review
 <iframe width="560" height="315" src="https://www.youtube.com/embed/x8v8Zsadk3Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 # Narrative
 ## Software Engineering
 I was able to meet the program enhancements listed in Module One. This would be that we were changing the man game loop over to a state machine to handle processing and logic. The process of enhancing this was very difficult. Due to the nature of the changes I was making, many lines of code were written without compiling. This left lots of little errors littered about by the time I was able to first compile. Mostly this was how I was accessing object properties through the use of pointers. 
